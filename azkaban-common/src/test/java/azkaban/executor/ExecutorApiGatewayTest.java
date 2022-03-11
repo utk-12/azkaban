@@ -187,5 +187,13 @@ public class ExecutorApiGatewayTest {
     protected String sendAndReturn(HttpUriRequest request) throws IOException {
       return SUCCESS_JSON;
     }
+    @Override
+    protected String sendAndReturnHttpForPing(HttpUriRequest request) throws IOException {
+      return SUCCESS_JSON;
+    }
+    @Override
+    protected String sendAndReturnHttpsForPing(HttpUriRequest request) throws IOException {
+      return SUCCESS_JSON;
+    }
   }
 }
